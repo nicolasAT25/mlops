@@ -1,0 +1,11 @@
+.devcontainer
+.env
+src/input/
+__pycache__/
+cloudbuild.yaml
+comandos.txt
+Dockerfile.dev
+Dockerfile.prod
+grc-servive-policy.yaml
+servive.yaml
+test.csv

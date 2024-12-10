@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: servicio-api-mlops9-datapath
+spec:
+  template:
+    spec:
+      containers:
+        - image: us-central1-docker.pkg.dev/project-mlops9-aranguren/repo-mlops9-aranguren/image-v1-servicio-mlops9-datapath:latest
+          env:
+          ports:
+            - containerPort: 4005
