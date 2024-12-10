@@ -6,6 +6,6 @@ cloudbuild.yaml
 comandos.txt
 Dockerfile.dev
 Dockerfile.prod
-grc-servive-policy.yaml
-servive.yaml
+gcr-service-policy.yaml
+service.yaml
 test.csv
