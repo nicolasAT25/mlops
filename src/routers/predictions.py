@@ -39,7 +39,7 @@ from src.configuraciones import config
 
 
 router = APIRouter(
-    prefix="/obtener-datos-de-usuario-y-predecir",
+    prefix="/predict",
     tags=["Prediction"]
 )
 
@@ -105,4 +105,5 @@ def publicar_mensaje(file: UploadFile = File(...)):
     except joblib.externals.loky.process_executor.TerminatedWorkerError:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Error al cargar el modelo de predicción.")
     except Exception as e:
-        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=f"Error interno del servidor: {str(e)}")
+        raise f"Error interno del servidor: {str(e)}"
+        # raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=f"Error interno del servidor: {str(e)}")
