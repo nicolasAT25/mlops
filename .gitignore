@@ -1,6 +1,6 @@
 .devcontainer
 .env
-src/input/
+#src/input/
 __pycache__/
 cloudbuild.yaml
 comandos.txt
