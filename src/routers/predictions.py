@@ -35,7 +35,7 @@ from src.configuraciones import config
 # from feature_engine.wrappers import SklearnTransformerWrapper
 
 # ------------ from .src.input ------------ #
-from src.input import preprocessors as pp
+# from ..input import preprocessors as pp
 
 
 router = APIRouter(
